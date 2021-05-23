@@ -22,11 +22,27 @@ header nav ul li {
     margin: 10px;
 }
 
-.about {
-    float: left;
+/* Places sections with headers on left and content on right */
+.about,
+.work,
+.contact {
+    display: inline-flex;
 }
 
-div h2 {
+.about h2,
+.work h2,
+.contact h2 {
+    width: 250px;
     text-align: right;
+    padding-right: 10px;
+}
 
+.about p,
+.work p,
+.contact p {
+    width: initial;
+    padding-left: 10px;
+    border-left: solid;
+    text-align: left;
+    font-size: 14px;
 }
