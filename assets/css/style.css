@@ -46,3 +46,7 @@ header nav ul li {
     text-align: left;
     font-size: 14px;
 }
+
+.work img {
+    border: solid;
+}
