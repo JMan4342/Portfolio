@@ -4,22 +4,42 @@
     margin: 0;
 }
 
+header {
+    display: flex;
+    margin-bottom: solid;
+    align-items: center;
+}
+
 header h1 {
     display: inline-block;
+    font-size: 48px;
+    margin-bottom: 60px;
 }
 
-header nav {
-    display: inline-block;
+.navigation {
+    width: inherit;
     float: right;
+    margin-top: 55px;
 }
 
-header nav ul {
+/* .navigation nav {
+    float: right;
+} */
+
+nav ul {
     list-style-type: none;
 }
 
-header nav ul li {
+nav ul li {
     display: inline-block;
     margin: 10px;
+    font-size: 28px;
+}
+
+#profile {
+    border-radius: 360px;
+    border: #b9c6ae;
+    z-index: 1;
 }
 
 /* Places sections with headers on left and content on right */
