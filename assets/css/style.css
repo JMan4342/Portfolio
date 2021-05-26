@@ -43,7 +43,7 @@ nav ul li {
   margin: 10px;
 }
 
-a {
+nav ul li a {
   font-family: Candara, Optima, Calibri;
   color: black;
   font-size: 28px;
@@ -64,6 +64,7 @@ a {
   display: inline-flex;
 }
 
+/* Formats left side of page with content headers */
 .about h2,
 .work h2,
 .contact h2 {
@@ -71,19 +72,16 @@ a {
   text-align: right;
   padding-right: 10px;
   font-size: 22px;
+  border-right: solid
 }
 
 h2 {
   font-family: Candara, Optima, Calibri;
 }
 
-/* Adds border to left of content. */
 .about div,
 .contact div {
-  display: flex;
-  width: initial;
   padding-left: 10px;
-  border-left: solid;
   text-align: left;
   font-size: 14px;
 }
@@ -97,7 +95,6 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border-left: solid;
   padding-left: 10px;
 }
 
@@ -132,10 +129,22 @@ h3 {
   font-family: Candara, Optima, Calibri;
 }
 
-.contact div {
-    display: inline-flex;
+.contact {
+  width: 100%
+}
+
+.info {
+    display: flex;
     justify-content: space-evenly;
     align-content: flex-start;
+    width: 100%
+}
+
+.info p,
+.info a {
+  font-family: Candara, Optima, Calibri;
+  color: black;
+  font-size: 20px
 }
 
 /* Adjust font size in header for smaller screen sizes. */
@@ -143,7 +152,7 @@ h3 {
   h1 {
     font-size: 44px;
   }
-  nav ul li {
+  nav ul li a {
     font-size: 22px;
   }
 }
@@ -152,7 +161,7 @@ h3 {
   h1 {
     font-size: 38px;
   }
-  nav ul li {
+  nav ul li a {
     font-size: 19px;
   }
 }
@@ -161,7 +170,7 @@ h3 {
   h1 {
     font-size: 30px;
   }
-  nav ul li {
+  nav ul li a {
     font-size: 14px;
   }
 }
