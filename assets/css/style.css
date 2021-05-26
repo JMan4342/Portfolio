@@ -3,6 +3,12 @@
   padding: 0;
   margin: 0;
   font-family: Geneva, Arial, "Times New Roman";
+  font-size: 18px;
+}
+
+/* Allow smooth scrolling. */
+html {
+    scroll-behavior: smooth;
 }
 
 header {
@@ -35,18 +41,20 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin: 10px;
-  font-size: 28px;
 }
 
 a {
   font-family: Candara, Optima, Calibri;
   color: black;
+  font-size: 28px;
 }
 
 #profile {
   border-radius: 360px;
   border: #b9c6ae;
   padding: 3px;
+  width: 250px;
+  height: 250px;
 }
 
 /* Places sections with headers on left and content on right */
@@ -62,6 +70,7 @@ a {
   min-width: 250px;
   text-align: right;
   padding-right: 10px;
+  font-size: 22px;
 }
 
 h2 {
@@ -71,7 +80,7 @@ h2 {
 /* Adds border to left of content. */
 .about div,
 .contact div {
-  display: block;
+  display: flex;
   width: initial;
   padding-left: 10px;
   border-left: solid;
@@ -82,11 +91,6 @@ h2 {
 .work img {
   border: solid;
 }
-
-/* .work .refractor img {
-    width: 100%;
-    height: auto;
-} */
 
 /* Wraps application images when change screen width. */
 .application {
@@ -126,6 +130,12 @@ h2 {
 
 h3 {
   font-family: Candara, Optima, Calibri;
+}
+
+.contact div {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-content: flex-start;
 }
 
 /* Adjust font size in header for smaller screen sizes. */
