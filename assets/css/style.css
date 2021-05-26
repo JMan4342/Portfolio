@@ -118,6 +118,7 @@ h3 {
   font-family: Candara, Optima, Calibri;
 }
 
+/* Adjust font size in header for smaller screen sizes. */
 @media screen and (max-width: 1114px) {
   h1 {
     font-size: 44px;
